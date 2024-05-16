@@ -1,17 +1,30 @@
 use leptos::{component, view, IntoView};
 
+/// The Icon takes three props
+/// icon - an equivalent of remix icon without the "ri-" prefix
+/// style - custom css rules
+/// class - tailwind or custom css classes
+///
+///
+/// ### Example (tailwind)
+/// ```rust
+/// <Icon class="text-2xl" icon="github-line"/>
+///  ```
+///
+/// ### Example (with style)
+///  <Icon class="text-2xl" icon="github-line" style="background-color-red; border:1px solid green;"/>
+///
+///
 #[component]
-pub fn L(
-       /// additional tailwind or custom css classes
+pub fn Icon(
+    /// additional tailwind or custom css classes
+    #[prop(default = "")] class: &'static str,
+    /// css style rules 
     #[prop(default = "")]
-    class: &'static str,
+    style: &'static str,
+    /// the remix icon class without the "ri-" prefix
+        #[prop(default = "")]
+    icon: &'static str,
 ) -> impl IntoView {
-    view! {
-        <div class="">
-            <a href="/" class=format!("flex items-center {class}")>
-
-                <span class="self-center text-2xl font-semibold whitespace-nowrap">Utils</span>
-            </a>
-        </div>
-    }
+    view! { <i class=format!("ri-{icon} {class}") style=style></i> }
 }
