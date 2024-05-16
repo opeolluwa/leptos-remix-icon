@@ -18,12 +18,13 @@ use leptos::{component, view, IntoView};
 #[component]
 pub fn Icon(
     /// additional tailwind or custom css classes
-    #[prop(default = "")] class: &'static str,
-    /// css style rules 
+    #[prop(default = "")]
+    class: &'static str,
+    /// css style rules
     #[prop(default = "")]
     style: &'static str,
     /// the remix icon class without the "ri-" prefix
-        #[prop(default = "")]
+    #[prop(default = "")]
     icon: &'static str,
 ) -> impl IntoView {
     view! { <i class=format!("ri-{icon} {class}") style=style></i> }
