@@ -19,7 +19,7 @@ pub fn App() -> impl IntoView {
 
 #[component]
 fn Home() -> impl IntoView {
-    let (count, set_count) = create_signal(0);
+    let (_count, _set_count) = create_signal(0);
 
     view! {
         <div class="my-0 mx-auto max-w-3xl text-center">

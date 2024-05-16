@@ -9,7 +9,7 @@ leptos_router = { version = "0.6.11", features = ["csr"] }
 leptos_meta = { version = "0.6.11", features = ["csr"] }
 log = "0.4"
 gloo-net = { version = "0.5", features = ["http"] }
-leptos-remix-icon ={ git = "https://github.com/opeolluwa/leptos-remix-icon/"}
+leptos-remix-icon ={ git = "https://github.com/opeolluwa/leptos-remix-icon/", version = "1.0.0"}
 # dependencies for client (enable when csr or hydrate set)
 wasm-bindgen = { version = "0.2" }
 console_log = { version = "1" }
