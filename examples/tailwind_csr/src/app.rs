@@ -11,7 +11,7 @@ pub fn App() -> impl IntoView {
         <Link rel="shortcut icon" type_="image/ico" href="/favicon.ico"/>
         <Router>
             <Routes>
-                <Route path="" view=  move || view! { <Home/> }/>
+                <Route path="" view=move || view! { <Home/> }/>
             </Routes>
         </Router>
     }
@@ -24,17 +24,15 @@ fn Home() -> impl IntoView {
     view! {
         <div class="my-0 mx-auto max-w-3xl text-center">
             <h2 class="p-6 text-4xl">" Leptos + Tailwind + Remix Icon"</h2>
-            <p class="px-10 pb-10 text-left">"Tailwind will scan your Rust files for Tailwind class names and compile them into a CSS file."</p>
-            
-<p>
-          View on Github  <Icon class="text-2xl" icon="github-fill"/>
+            <p class="px-10 pb-10 text-left">
+                "Tailwind will scan your Rust files for Tailwind class names and compile them into a CSS file."
+            </p>
 
-</p>
+            <p>View on Github <Icon class="text-2xl" icon="github-fill"/>
+            </p>
 
-<p>
-            Follow On Twitter  <Icon class="text-2xl" icon="twitter-fill"/>
-
-</p>
+            <p>Follow On Twitter <Icon class="text-2xl" icon="twitter-fill"/>
+            </p>
         </div>
     }
 }
