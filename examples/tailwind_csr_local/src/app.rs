@@ -28,11 +28,11 @@ fn Home() -> impl IntoView {
                 "Tailwind will scan your Rust files for Tailwind class names and compile them into a CSS file."
             </p>
 
-            <p>View on Github <Icon class="text-2xl" icon="github-fill"/>
+            <p>
+            View on Github <Icon class="text-2xl block" icon="github-fill" size="10x" />
+            Follow On Twitter <Icon class="text-2xl block" icon="twitter-fill"/>
             </p>
 
-            <p>Follow On Twitter <Icon class="text-2xl" icon="twitter-fill"/>
-            </p>
         </div>
     }
 }

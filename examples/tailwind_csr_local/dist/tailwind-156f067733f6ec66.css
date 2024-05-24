@@ -544,6 +544,10 @@ video {
   margin-bottom: 0px;
 }
 
+.block {
+  display: block;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
