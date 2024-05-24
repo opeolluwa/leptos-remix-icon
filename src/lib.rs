@@ -1,4 +1,5 @@
 use leptos::{component, view, IntoView};
+pub mod pkg;
 
 /// The Icon takes three props
 /// icon - an equivalent of remix icon without the "ri-" prefix
@@ -26,6 +27,12 @@ pub fn Icon(
     /// the remix icon class without the "ri-" prefix
     #[prop(default = "")]
     icon: &'static str,
+    /// remix icon class
+    #[prop(default = "")]
+    size: &'static str,
 ) -> impl IntoView {
-    view! { <i class=format!("ri-{icon} {class}") style=style></i> }
+    let icon_size = pkg::IconSize::from_str(&size.trim())
+        .unwrap_or_default()
+        .as_str();
+    view! { <i class=format!("ri-{icon} {class} ri-{icon_size}") style=style></i> }
 }

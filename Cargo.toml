@@ -1,12 +1,13 @@
 [package]
 name = "leptos-remix-icon"
 description = "Easily integrate Remix icons in Leptos applications"
-version = "1.0.1"
+version = "1.0.2"
 edition = "2021"
 authors = ["Adeoye Adefemi<adefemiadeoye@yahoo.com>"]
 license = "MIT"
-
+repository = "https://github.com/opeolluwa/leptos-remix-icon"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
 leptos = "0.6.11"
+serde = { version = "1.0.202", features = ["derive"] }
