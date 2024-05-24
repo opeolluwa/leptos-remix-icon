@@ -34,5 +34,5 @@ pub fn Icon(
     let icon_size = pkg::IconSize::from_str(&size.trim())
         .unwrap_or_default()
         .as_str();
-    view! { <i class=format!("ri-{icon} {class} ri-{icon_size}") style=style></i> }
+    view! { <i class=format!("ri-{icon} {class} {icon_size}") style=style></i> }
 }
